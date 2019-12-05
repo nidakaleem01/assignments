@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image position</title>
+</head>
+<style type="text/css">
+#bg
+{
+	position: relative;
+}
+ img
+{
+	width: 100%;
+	height:auto;
+}	
+.topleft 
+{
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  font-size: 30px;
+  color: white;
+
+}
+.topright 
+{
+  position:absolute;
+  right:16px;
+  top: 8px;
+  font-size: 30px;
+  color: white;
+  
+}
+.center
+{
+	position: absolute;
+	width:100%;
+	top: 50%;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+.bottomleft{
+	position:absolute;
+  left:16px;
+  bottom: 8px;
+  font-size: 30px;
+  color: white;
+}
+.bottomright{
+	position:absolute;
+  right:16px;
+  bottom: 8px;
+  font-size: 30px;
+  color: white;
+}
+</style>
+<body>
+<h3 style="color: white;display:block;background-color: #128ac9;max-width: 100%;padding: 15px;margin: auto;text-align: center;">Text Position set to an image</h3><br>
+<div id="bg">
+<img src="images/bg.jpg">
+<div class="topleft">Top_left</div>
+<div class="topright">Top_right</div>
+<div class="center">Center</div>
+<div class="bottomleft">Bottom Left</div>
+<div class="bottomright">Bottom Right</div>
+</div>
+</body>
+</html>
