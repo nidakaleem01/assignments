@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<style>
+	body
+	{
+		width:50%;
+		height: auto;
+		background-color: #f1f1f1;
+		margin: auto;
+		margin-top:30px;
+		font-family: sans-serif;
+		font-weight: bold;
+		color: #901515;
+
+	}
+	form
+	{
+		margin-top:25px;
+
+	}
+	h3
+	{
+		text-align: center;
+		color: white;
+		background-color: #901515;
+		margin: 2px;
+		padding: 15px;
+		border-radius: 4px;
+
+	}
+input[type=text], select 
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #901515;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] 
+{
+  width:25%;
+  background-color:#901515;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+<body>
+	
+	<h3>Sign up</h3>
+	
+	<form>
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" placeholder="Your First Name">
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" placeholder="Your last Name">
+		<label for="email">Email</label>
+		<input type="text" name="email" placeholder="something@gmail.com">
+		<label for="country">Select a Country</label>
+    <select id="country" name="country">
+      <option value="Pakistan">Pakistan</option>
+      <option value="Canada">Canada</option>
+      <option value="Usa">USA</option>
+      <option value="China">China</option>
+      <option value="Saudiarbia">Saudi Arbia</option>
+    </select>
+    <label for="courses">Select a Course</label>
+    <select id="courses" name="courses">
+      <option value="WebDevelopment">Web Development</option>
+      <option value="Networking">Networking</option>
+      <option value="Basics">Basics</option>
+    </select>
+    <center>
+    <input type="submit" name="Submit"></center>
+</form>
+
+</body>
+</html>
